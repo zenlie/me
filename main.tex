@@ -1,0 +1,163 @@
+\documentclass{wileySix}
+
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=TeX,
+	caption=Coy kasih caption dong,
+	label={lstlisting_nya_ada_yang_belum_dikasih_label}
+}
+
+\lstset{style=mystyle}
+
+\usepackage{w-bookps}
+
+\setcounter{secnumdepth}{3}
+
+\setcounter{tocdepth}{2}
+
+
+\docropmarks
+
+
+\newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
+
+
+\newbox\sectsavebox
+\setbox\sectsavebox=\hbox{\boldmath\VT{xyz}}
+
+
+
+\begin{document}
+
+
+\booktitle{Loogbok AS}
+\subtitle{Dalam 24 Jam}
+
+\authors{Etika Khusnul Laeli, Jenly Ramdan\\
+\affil{D4 Informatics Engineering}}
+
+\offprintinfo{Cerdas Menguasai Android Studio, First Edition}{Etika Khusnul Laeli, Jnely Ramdan}
+
+
+\halftitlepage
+
+\titlepage
+
+
+\begin{copyrightpage}{2020}
+\input{info/copyrightpage}
+\end{copyrightpage}
+
+\dedication{`Jika Kamu tidak dapat menahan lelahnya belajar,
+Maka kamu harus sanggup menahan perihnya Kebodohan.'
+~Imam Syafi'i~}
+
+\begin{contributors}
+\input{info/contributors}
+\end{contributors}
+
+\contentsinbrief
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+
+
+\begin{foreword}
+\input{info/foreword}
+\end{foreword}
+
+\begin{preface}
+\input{info/preface}
+\end{preface}
+
+
+\begin{acknowledgments}
+\input{info/acknowledgments}
+\end{acknowledgments}
+
+\begin{acronyms}
+\input{info/acronyms}
+\end{acronyms}
+
+\begin{glossary}
+\input{info/glossary}
+\end{glossary}
+
+\begin{symbols}
+\input{info/symbols}
+\end{symbols}
+
+\begin{introduction}
+\input{info/introduction}
+\end{introduction}
+
+%%%%%%%%%%%%%%%%%%Isi Buku_
+
+\chapter{Pengenalan Android Studio}
+\input{chapters/0}
+
+\chapter{Installasi Android Studio}
+\input{chapters/1}
+
+\chapter{Pengenalan PHP}
+\input{chapters/2}
+
+\chapter{Webhost000}
+\input{chapters/3}
+
+
+\chapter{Database}
+\input{chapters/4}
+
+
+\chapter{Flowmap}
+\input{chapters/5}
+
+\chapter{Contoh Studi Kasus}
+\input{chapters/6}
+
+\chapter{Contoh pemrograman sederhana Android Studio "Hello World"}
+\input{chapters/7}
+
+\chapter{Penggunaan Aplikasi untuk siapakah?}
+\input{chapters/8}
+
+\chapter{Apa perbedaan penggunaan Heroku dan Webhost?}
+\input{chapters/9}
+
+\chapter{Interfaces aplikasi}
+\input{chapters/10}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+\printindex
+\end{document}
+
